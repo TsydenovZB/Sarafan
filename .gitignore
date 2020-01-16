@@ -32,3 +32,6 @@ out/
 .vscode/
 /sarafan
 /sarafan.pub
+/node_modules/
+/package.json
+/yarn.lock
