@@ -30,6 +30,17 @@ module.exports = {
       {
         test: /\.vue$/,
         loader: 'vue-loader'
+      },
+      {
+        test: /\.(eot|svg|ttf|woff|woff2)(\?\S*)?$/,
+        loader: 'file-loader'
+      },
+      {
+        test: /\.css$/,
+        use: [
+            'vue-style-loader',
+            'css-loader'
+        ]
       }
     ]
   },
@@ -42,4 +53,4 @@ module.exports = {
           path.join(__dirname, 'node_modules'),
       ],
   }
-}
+};
