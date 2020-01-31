@@ -1,7 +1,7 @@
 package com.example.letscode.sarafan.domain;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import lombok.Data;
+import com.fasterxml.jackson.annotation.JsonView;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -11,11 +11,13 @@ import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "usr")
-@Data
 public class User implements Serializable {
     @Id
+    @JsonView(Views.IdName.class)
     private String id;
+    @JsonView(Views.IdName.class)
     private String name;
+    @JsonView(Views.IdName.class)
     private String userpic;
     private String email;
     private String gender;

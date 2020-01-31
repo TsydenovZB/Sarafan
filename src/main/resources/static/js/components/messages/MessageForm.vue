@@ -1,9 +1,10 @@
 <template>
-    <v-layout row>
+    <v-layout row class="px-4">
         <v-text-field
                 label="New message"
                 placeholder="Write something"
                 v-model="text"
+                @keyup.enter="save"
         />
         <v-btn @click="save">
             Save
@@ -12,7 +13,7 @@
 </template>
 
 <script>
-    import { mapActions } from'vuex'
+    import { mapActions } from 'vuex'
 
     export default {
         props: ['messageAttr'],
