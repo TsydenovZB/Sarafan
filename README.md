@@ -9,6 +9,14 @@ The application has social network functions such as:
 * Preview links
 * Interactive transfer of information between different users
 
+## Structure  
+The **_Config_** package contains the configuration of the application.  
+The **_Controller_** package contains the implementation of the Controller from MVС.  
+The **_Domain_** package stores entities that are tables in the database.   
+The **_Dto_** package implements the pattern **Data Transfer Object**.  
+The **_Repository_** package contains components that implement access to data in the database.  
+The **_Service_** package contains business logic.  
+
 ## Technologies used:
 - Project builder: **Gradle**
 - Registration and authentication: **Spring Security**
