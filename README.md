@@ -14,6 +14,7 @@ The application has social network functions such as:
 - Registration and authentication: **Spring Security**
 - Database: **PostgreSQL**
 - Package manager: **Yarn**
+- Module bundler: **Webpack**
 - Data transfer: **Websocket** with library **SockJS** and sending a message using the **Stomp** protocol
 - Serializing data: **JsonView**
 - Router: **VueRouter**
